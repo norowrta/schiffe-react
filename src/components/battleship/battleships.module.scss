@@ -1,0 +1,36 @@
+@use '../../scss/abstracts/' as a;
+
+.battleshipsPlayerBoard {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+
+}
+
+.battleshipsCell {
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  background: rgba(97, 198, 255, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battleshipsHeadline {
+  color: rgba(113, 124, 150, 0.7);
+
+  font-family: a.$font-main;
+  font-style: Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
